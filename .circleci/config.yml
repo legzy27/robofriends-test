@@ -16,7 +16,7 @@ jobs:
       - run: echo "testing stuff"
       - run: npm install
       - run: npm test
-  hithere:
+  hellothere:
     docker:
       - image: circleci/node:8.9
     steps:
@@ -27,7 +27,7 @@ workflows:
   build_test_and_lint:
     jobs:
       - build
-      - hithere
+      - hellothere
       - test:
           requires:
             - hellothere
