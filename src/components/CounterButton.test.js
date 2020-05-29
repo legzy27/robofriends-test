@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import CounterButton from './CounterButton';
+import CounterButton2 from './CounterButton';
 
 it('renders without crashing', () => {
   expect(shallow(<CounterButton />)).toMatchSnapshot();
